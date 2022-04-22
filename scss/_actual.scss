@@ -1,0 +1,204 @@
+.actual {
+    position: relative;
+    z-index: 100;
+    &__body {
+        padding: 96px 0px 127px;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 65px;
+    }
+    &__content-header {
+        font-family: "RFDewiExpanded";
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10;
+    }
+    &__content-allactual-title {
+        font-family: "RFDewiExpanded";
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        font-weight: 700;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__content-allnews__link {
+        display: flex;
+        font-family: "RFDewiExpanded";
+        font-weight: 600;
+        padding: 13px 32px;
+        background: #ffffff;
+        border-radius: 24px;
+        transition: all 0.3s linear;
+        position: relative;
+        z-index: 10;
+        &:hover {
+            color: #e6c294;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__content-allnews {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content-allnews-arrow {
+        margin-left: 8px;
+    }
+    &__block {
+        // display: flex;
+        margin-bottom: 32px;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        height: 166px;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    &__items-type {
+        background: #6d879c;
+        max-width: 78px;
+        padding: 4px 12px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    &__items-color {
+        background: #c3a693;
+    }
+    &__items-span {
+        color: #ffff;
+        font-size: 10px;
+        font-family: "RFDewiExpanded";
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        line-height: 150%;
+    }
+    &__items-title {
+        font-family: "RFDewiExpanded";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 12px;
+        word-wrap: break-word;
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+    &__items-data {
+        font-family: "RFDewiExpanded";
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 150%;
+        span {
+            color: rgba(0, 0, 0, 0.38);
+        }
+    }
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+.accreditation {
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    &__row {
+        display: flex;
+        max-width: 783px;
+        height: 292px;
+        border-radius: 24px;
+        background: white;
+        margin-bottom: 127px;
+    }
+    &__col {
+        font-family: "RFDewiExpanded";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 35px;
+    }
+    &__add {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url(../img/status/pyram.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 100%;
+        border-radius: 0 24px 24px 0;
+        padding-top: 35px;
+        background-size: contain;
+        &-row {
+            margin-right: 36px;
+            text-align: center;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+    }
+    &__btn {}
+    &__link {
+        padding: 13px 60px 13px 32px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        position: relative;
+        letter-spacing: 0.4px;
+        border-radius: 26px;
+        background: linear-gradient( 83.11deg, #000000 0%, #010101 0.01%, #444444 69.79%, #000000 100%, #000000 100%, #000000 100%);
+        transition: all 0.3s linear;
+        &:after {
+            content: url(../img/status/arrow.svg);
+            position: absolute;
+            top: 33%;
+            right: 12%;
+        }
+        &:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+            color: #e6c294;
+        }
+    }
+    &__number {
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 100%;
+        color: #000000;
+    }
+    &__type {
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 100%;
+        color: #606060;
+    }
+}

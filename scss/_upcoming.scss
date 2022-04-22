@@ -1,0 +1,91 @@
+.upcoming {
+    &__title {
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        margin-bottom: 48px;
+        margin-top: 64px;
+        &-span {
+            color: #6d879c;
+        }
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__col {
+        flex: 1 1 50%;
+        margin-bottom: 120px;
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+    &__item {
+        position: relative;
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
+
+.content {
+    &__upcoming-title {
+        padding: 0 20px;
+        margin-bottom: 10px;
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 0.4px;
+        color: #ffff;
+    }
+    &__upcoming-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__upcoming-col {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    &__upcoming-suptitle {
+        color: #e5e5e5;
+        font-size: 12px;
+        line-height: 150%;
+        font-family: "Montserrat";
+    }
+    &__upcoming-content {
+        font-family: "Montserrat";
+        font-size: 16px;
+        color: #fff;
+        font-weight: 500;
+    }
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px;
+}

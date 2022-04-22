@@ -1,0 +1,50 @@
+@media (max-width: 1150px) {
+  .projectcard {
+    &__content-right {
+      flex: 1 0 40%;
+    }
+  }
+
+  .overview__row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .projectcard__title {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .projectcard__content {
+    flex-direction: column;
+  }
+  .projectcard__content-left {
+    margin-bottom: 15px;
+  }
+
+  .projectcard__content-right {
+    padding-left: 0;
+    flex: 1 0 100%;
+  }
+
+  .overview__body {
+    margin-bottom: 40px;
+  }
+  .overview__text {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview__table-row {
+    flex-direction: column;
+  }
+  .overview__table-col:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .projectcard__body {
+    padding-top: 249px;
+  }
+}

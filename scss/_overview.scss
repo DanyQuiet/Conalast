@@ -1,0 +1,99 @@
+.overview {
+    &__body {
+        margin-bottom: 56px;
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // align-items: center;
+        max-width: 1057px;
+    }
+    &__col {
+        flex: 1 1 50%;
+        margin-bottom: 96px;
+    }
+    &__title {
+        margin-bottom: 32px;
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+    }
+    &__text {
+        margin-right: 40px;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 400;
+    }
+    &__table-row {
+        display: flex;
+        flex-direction: row;
+    }
+    &__table-col {
+        flex: 1 1 50%;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    &__table-title {
+        margin-bottom: 24px;
+        font-weight: 600;
+        line-height: 150%;
+    }
+    &__title-span {
+        color: #6d879c;
+    }
+    &__token {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__token-item {
+        padding: 4px 34px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 60;
+        margin-right: 2px;
+        text-align: center;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+    &__token-black {
+        background: #000;
+    }
+    &__token-content {
+        font-size: 16px;
+    }
+    &__token-status {
+        font-size: 12px;
+    }
+    &__token-blue {
+        background: #6d879c;
+    }
+    &__token-brown {
+        background: #c3a692;
+        flex-grow: 2;
+    }
+    &__lasttext {
+        margin-top: 56px;
+    }
+}
+
+.table__overview {
+    border-collapse: collapse;
+    width: 100%;
+    color: #a5a5a5;
+    font-weight: 600;
+    &-cell {
+        text-align: right;
+        color: #000000;
+    }
+    td {
+        padding-bottom: 16px;
+    }
+}
+
+.projectcard__launch-item {
+    flex: 1 1 50%;
+}

@@ -1,0 +1,55 @@
+.platform {
+    &__inner {
+        margin-bottom: 130px;
+    }
+    &__content {
+        background: url(../img/platform/cloud.png) 50% no-repeat;
+        height: 528px;
+        max-width: 1055px;
+        margin: 0 auto;
+    }
+    &__header {
+        font-size: 40px;
+        text-align: center;
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        padding-top: 180px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+    }
+    &__span-color {
+        color: #6d879c;
+    }
+    &__body {
+        margin: 0 auto;
+        max-width: 820px;
+    }
+    &__body-text {
+        margin-bottom: 32px;
+        font-size: 22px;
+        line-height: 150%;
+    }
+    &__btn {
+        padding: 16px 24px;
+        background: rgba(#fff, 0.3);
+        border-radius: 46px;
+        box-shadow: 0px 8px 16px 0px #00000012;
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        transition: all 0.3s linear;
+        position: relative;
+        // &:after {
+        //     content: url(../img/platform/arrow.svg);
+        //     position: absolute;
+        //     top: 27%;
+        //     right: 14%;
+        // }
+        &:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+            color: #e6c294;
+        }
+    }
+}

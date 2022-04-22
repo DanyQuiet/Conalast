@@ -1,0 +1,114 @@
+.aboutnews__wrap {
+    margin-bottom: 133px;
+}
+
+.news {
+    padding-top: 175px;
+    padding-bottom: 126px;
+    flex: 1 0 auto;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 128px;
+        position: relative;
+    }
+    &__item {
+        flex: 0 1 80%;
+    }
+    &__title {}
+    &__content {
+        position: relative;
+        width: 100%;
+    }
+    &__content-first {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        z-index: 1;
+    }
+    &__content-second {
+        position: absolute;
+        top: 39%;
+        left: 42%;
+        z-index: 2;
+    }
+    &__content-third {
+        position: absolute;
+        top: 16%;
+        left: 61%;
+        z-index: 1;
+    }
+}
+
+.aboutnews {
+    &__block {
+        padding: 0 128px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__item {
+        margin-bottom: 17px;
+    }
+    &__status {
+        padding: 5px 12px;
+        font-family: "RFDewiExpanded";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 150%;
+        background: linear-gradient(77.27deg, #6d879c 34.41%, #a9c1d5 68.75%, #6d879c 92.69%);
+        border-radius: 4px;
+        color: #ffffff;
+        margin-right: 12px;
+    }
+    &__span-color {
+        background: #c3a693;
+    }
+    &__date,
+    &__autor {
+        color: #a5a5a5;
+        font-family: "RFDewiExpanded";
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 400;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        border-bottom: 1px solid #a5a5a5;
+        padding-bottom: 32px;
+    }
+    &__col {}
+    &__title {
+        font-family: "RFDewiExpanded";
+        font-size: 48px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        color: #000000;
+        margin-right: 65px;
+    }
+    &__about {}
+    &__btn {
+        display: flex;
+        font-family: "RFDewiExpanded";
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        padding: 13px 60px 13px 32px;
+        background: #ffffff;
+        border-radius: 26px;
+        position: relative;
+        transition: box-shadow 0.3s linear;
+        &:after {
+            content: url(../img/news/arrow-about.svg);
+            position: absolute;
+            top: 15px;
+            right: 32px;
+        }
+        &:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+        }
+    }
+}

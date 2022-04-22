@@ -1,0 +1,46 @@
+.footer {
+    background: #000000;
+    &__body {
+        padding: 48px 0 24px;
+        color: #ebebeb;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__col {}
+    &__col-logo {
+        margin-bottom: 24px;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__col-text {
+        margin-bottom: 20px;
+        max-width: 514px;
+    }
+    &__col-info {}
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 50%;
+        font-family: "RFDewiExpanded";
+        flex-wrap: wrap;
+    }
+    &__items-link {
+        &:hover {
+            color: #e6c294;
+        }
+    }
+    &__items-col {
+        display: flex;
+        flex-direction: column;
+    }
+    &__items-item {
+        padding: 5px;
+        margin-bottom: 6px;
+    }
+}

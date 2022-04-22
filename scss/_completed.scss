@@ -1,0 +1,18 @@
+.completed__title {
+    font-family: "RFDewiExpanded";
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    font-weight: 300;
+    margin-bottom: 48px;
+    &-span {
+        color: #00bf84;
+    }
+    &-color {
+        color: #e2c2a5;
+    }
+}
+
+.completed__body {
+    margin-bottom: 128px;
+}

@@ -1,0 +1,180 @@
+.projectcard {
+    &__body {
+        padding-top: 174px;
+        padding-bottom: 196px;
+    }
+    &__title {
+        margin-bottom: 48px;
+    }
+    &__suptitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__suptitle-col {
+        display: flex;
+        img {
+            margin-left: 6px;
+        }
+    }
+    &__suptitle-onair,
+    &__suptitle-iro {
+        font-family: "RFDewiExpanded";
+        font-weight: 600;
+        padding: 4px 10px;
+        margin-right: 6px;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 12px;
+    }
+    &__suptitle-onair {
+        background: #00bf84;
+    }
+    &__suptitle-iro {
+        background: #e2c2a5;
+    }
+    &__title-col {
+        font-family: "RFDewiExpanded";
+        font-size: 48px;
+        line-height: 150%;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+    }
+    &__suptitle-item {
+        font-family: "RFDewiExpanded";
+        font-size: 12px;
+        font-weight: 600;
+        padding: 4px 12px;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        margin-right: 12px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+    }
+    &__content-left {
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__content-right {
+        padding-left: 30px;
+        flex: 1 0 30%;
+    }
+    &__item {}
+    &__item-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    &__item-col {}
+    &__item-total {
+        font-family: "Montserrat";
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        color: #a5a5a5;
+        font-weight: 500;
+    }
+    &__item-number {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+    }
+    &__buttons {}
+    &__buttons-link {
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        font-family: "RFDewiExpanded";
+        font-weight: 600;
+    }
+}
+
+.buttons-join {
+    position: relative;
+    z-index: 1000;
+    white-space: nowrap;
+    &:before {
+        content: "";
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.2s linear;
+        z-index: -1000;
+        border-radius: 12px;
+    }
+    &:hover:before {
+        opacity: 1;
+    }
+}
+
+.buttons-join {
+    color: #a5a5a5;
+    margin-bottom: 16px;
+    border: 1px solid #a5a5a5;
+    border-radius: 26px;
+}
+
+.progressbar.projectcard {
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 12px;
+    tr {
+        vertical-align: top;
+    }
+    &__сell {
+        text-align: right;
+    }
+    &__сell-color {
+        color: #a5a5a5;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__cell-add {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        padding-bottom: 15px;
+        color: #000000;
+    }
+}
+
+.progressbar__label-color {
+    color: #000000;
+    font-weight: 500;
+}
+
+.projectcard__item-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 48px;
+}
+
+.projectcard__info-after {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #606060;
+}

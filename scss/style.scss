@@ -1,0 +1,87 @@
+@import "fonts.scss";
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    background: #ebebeb;
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 0 20px;
+    box-sizing: content-box;
+}
+
+.iropage {
+    flex: 1 0 auto;
+}
+
+@import "_header";
+@import "_main";
+@import "_inform";
+@import "_platform";
+@import "_status";
+@import "_actual";
+@import "_footer";
+// iropage page
+@import "_iropage";
+@import "_upcoming";
+@import "_onair";
+@import "_completed";
+// projectcard page
+@import "_projectcard";
+@import "_overview";
+// news page
+@import "_news";
+@import "_media";
+@import "_media-iro";
+@import "_media-projectcard";
+@import "_media-news";
