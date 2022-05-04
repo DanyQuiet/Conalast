@@ -1,0 +1,119 @@
+.detailed {
+    &__container {
+        max-width: 1320px;
+    }
+    &__header {
+        padding-top: 136px;
+        padding-bottom: 32px;
+        h2 {
+            font-family: "RFDewiExpanded";
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 72px;
+            letter-spacing: 0.004em;
+            text-align: left;
+        }
+    }
+    &__margin {
+        margin-bottom: 96px;
+    }
+    &__bg {
+        background: linear-gradient(77.27deg, #d0dbe3 45.86%, #e9eff3 69.27%, #d3dde6 91.65%);
+        border-radius: 4px;
+        margin-right: 12px;
+    }
+    &__data {
+        font-family: "RFDewiExpanded";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.004em;
+        color: #606060;
+    }
+    &__content {
+        margin-bottom: 95px;
+    }
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        &:first-child {
+            margin-bottom: 40px;
+        }
+    }
+    &__span-color {
+        color: #6d879c;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 130px;
+    }
+    &-wrap {
+        flex-wrap: wrap;
+    }
+    &__btn {
+        position: relative;
+        background: #ffffff;
+        border-radius: 26px;
+        align-items: center;
+        padding: 16px 32px 16px 60px;
+        font-family: "RFDewiExpanded";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.004em;
+        border: 2px solid #ffffff;
+    }
+    &__btn-add {
+        background: none;
+        margin-right: 16px;
+    }
+    &__arrow-left:before,
+    &__btn-add:before {
+        content: url(../img/detailed/left.svg);
+        position: absolute;
+        top: 15px;
+        left: 34px;
+    }
+    &__btn-next {
+        padding: 16px 60px 16px 32px;
+        &:before {
+            content: url(../img/detailed/right.svg);
+            position: absolute;
+            top: 15px;
+            right: 34px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .detailed__header {
+        padding-top: 230px;
+    }
+}
+
+@media (max-width: 770px) {
+    .detailed__header {
+        h2 {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+    .detailed__btn {
+        span {
+            display: none;
+        }
+    }
+    .detailed__btn,
+    .detailed__btn-next {
+        padding: 16px 50px 16px 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detailed__header {
+        padding-top: 285px;
+    }
+}

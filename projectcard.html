@@ -16,6 +16,43 @@
 
 <body>
     <div class="page">
+        <div class="under__container" id="under__container">
+            <div class="stageone">
+                <div class="stageone__row">
+                    <div class="stageone__info">
+                        To participate in CONA Foundation’s IROs you must <span class="stageone__span-info">complete the KYC</span> process and <span class="stageone__span-info">obtain accreditation status</span> on the platform.
+
+                    </div>
+                    <div class="stageone__col">
+                        <button class="stageone__btn" id="stageone__btn">
+                            Stage 1: Complete KYC
+                        </button>
+                        <button class="stageone__close" id="stageone__close">
+                            <img src="img/stage/close.svg" alt="close">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="under__container" id="under__container">
+            <div class="stageone">
+                <div class="stageone__row">
+                    <div class="stageone__info">
+                        You have <span class="stagetwo__span-info">successfully completed the KYC</span>. You can now <span class="stageone__span-info">obtain accreditation status</span>on the platform to participate in CONA Foundation’s IROs.
+                    </div>
+                    <div class="stageone__col">
+                        <button class="stageone__btn" id="stageone__btn">
+                            Stage 2: Complete Accreditation
+                        </button>
+                        <button class="stageone__close" id="stageone__close">
+                            <img src="img/stage/close.svg" alt="close">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
         <header class="header">
             <div class="header__container container">
                 <div class="header__inner">
@@ -29,26 +66,23 @@
                     <nav class="header__nav">
                         <div class="item__header-content">
                             <div class="item__header-nav">
-                                <button class="header__button">
-                                    <a class="header__button-link" href="iro-page.html"><span
-                                            class="header__button-uppercase">IRO</span>Projects
+                                <a class="header__button-link" href="iro-page.html"><span class="header__button-uppercase">IRO</span>Projects
                                     </a>
-                                </button>
                             </div>
                             <div class="item__header-nav">
-                                <a class="item__header-nav_link" href="">Dashboard</a>
+                                <a class="item__header-nav_link" href="dashboard.html">Dashboard</a>
                             </div>
                             <div class="item__header-nav">
-                                <a class="item__header-nav_link" href="news.html">Whitepaper</a>
+                                <a class="item__header-nav_link" href=" ">Whitepaper</a>
                             </div>
                             <div class="item__header-nav">
-                                <a class="item__header-nav_link" href="">News</a>
+                                <a class="item__header-nav_link" href="news.html">News</a>
                             </div>
 
                         </div>
                         <div class="header__buttons">
                             <div class="header__marker">KYC</div>
-                            <button class="header__wallet">Connect wallet</button>
+                            <a class="header__wallet">Connect wallet</a>
                         </div>
                     </nav>
 
@@ -63,6 +97,7 @@
                 </div>
             </div>
         </header>
+
 
         <section class="projectcard">
             <div class="projectcard__container container">
@@ -95,29 +130,16 @@
                         <div class="projectcard__content-right">
                             <div class="projectcard__item">
 
-                                <div class="progressbar projectcard">
-                                    <label class="progressbar__label progressbar__label-color" for="">Sale completion</label>
-                                    <progress class="progressbar__line" max="100" value="70"> 70% </progress>
+
+
+                                <div class="progressbar__block">
+                                    <label class="progressbar__block-label projectcard__label-color" for="">Sale completion</label>
+                                    <div class="progressbar">
+                                        <div class="progressbar__value"><span class="span">50</span></div>
+                                    </div>
 
                                 </div>
-                                <!-- <div class="projectcard__item-row">
-                                    <div class="projectcard__item-col">
-                                        <div class="projectcard__item-total">
-                                            Total Raise
-                                        </div>
-                                        <div class="projectcard__item-number">
-                                            2.200.000 USDT
-                                        </div>
-                                    </div>
-                                    <div class="projectcard__item-col">
-                                        <div class="projectcard__item-total">
-                                            Buying Coin
-                                        </div>
-                                        <div class="projectcard__item-number">
-                                            REIT-CF-AD
-                                        </div>
-                                    </div>
-                                </div> -->
+
                                 <table class="table">
                                     <tbody>
                                         <tr>
@@ -156,7 +178,7 @@
                                 </table>
                                 <p class="projectcard__item-text">5% released on TGE, then a 6 month cliff and linear release for 6 months.</p>
                                 <div class="projectcard__buttons">
-                                    <a href="" class="projectcard__buttons-link buttons-join">Join project</a>
+                                    <button class="projectcard__buttons-link buttons-join" id="btnjoin">Join project</button>
 
                                 </div>
                                 <p class="projectcard__info-after">
@@ -327,18 +349,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="progressbar">
-                                        <label class="progressbar__label" for="">Sale completion</label>
-                                        <progress class="progressbar__line" max="100" value="70"> 70% </progress>
-                                        <div class="progressbar__row">
-                                            <div class="progressbar__col">
-                                                <div class="progressbar__output">
-                                                    25%
-                                                </div>
-                                                <div class="progressbar__money">
-                                                    50.000 / 200.000 USDT
-                                                </div>
-                                            </div>
+                                    <div class="progressbar__block">
+                                        <label class="progressbar__block-label projectcard__label-color" for="">Sale completion</label>
+                                        <div class="progressbar">
+                                            <div class="progressbar__value"><span class="span">50</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -371,18 +385,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="progressbar">
-                                        <label class="progressbar__label" for="">Sale completion</label>
-                                        <progress class="progressbar__line" max="100" value="70"> 70% </progress>
-                                        <div class="progressbar__row">
-                                            <div class="progressbar__col">
-                                                <div class="progressbar__output">
-                                                    25%
-                                                </div>
-                                                <div class="progressbar__money">
-                                                    50.000 / 200.000 USDT
-                                                </div>
-                                            </div>
+                                    <div class="progressbar__block">
+                                        <label class="progressbar__block-label projectcard__label-color" for="">Sale completion</label>
+                                        <div class="progressbar">
+                                            <div class="progressbar__value"><span class="span">50</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -394,7 +400,7 @@
             </div>
         </section>
 
-        <div class="footer">
+        <footer class="footer">
             <div class="footer__container container">
                 <div class="footer__body">
                     <div class="footer__row">
@@ -410,43 +416,49 @@
                         <div class="footer__items">
                             <div class="footer__items-col">
                                 <div class="footer__items-item">
-                                    <a href="" class="footer__items-link">
+                                    <a href="iro-page.html" class="footer__items-link">
                                         IRO Projects
                                     </a>
                                 </div>
                                 <div class="footer__items-item">
-                                    <a href="" class="footer__items-link">
+                                    <a href="dashboard.html" class="footer__items-link">
                                         Dashboard
                                     </a>
                                 </div>
-                                <div class="footer__items-item">
-                                    <a href="" class="footer__items-link">
+                                <div class="footer__items-item" id="partnership">
+                                    <button class="footer__items-link">
                                         Partnership
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                             <div class="footer__items-col">
                                 <div class="footer__items-item">
-                                    <a href="" class="footer__items-link">
+                                    <a href="#" class="footer__items-link">
                                         Whitepaper
                                     </a>
                                 </div>
                                 <div class="footer__items-item">
-                                    <a href="" class="footer__items-link">
+                                    <a href="news.html" class="footer__items-link">
                                         News
                                     </a>
                                 </div>
                             </div>
                             <div class="footer__items-col">
                                 <div class="footer__items-item">
-                                    <a href="" class="footer__items-link">
+                                    <a href="terms.html" class="footer__items-link">
                                         Terms & Conditions
                                     </a>
                                 </div>
                                 <div class="footer__items-item">
-                                    <a href="" class="footer__items-link">
+                                    <a href="policy.html" class="footer__items-link">
                                         Private Policy
                                     </a>
+
+                                </div>
+                                <div class="footer__items-item" id="support">
+                                    <button class="footer__items-link">
+                                        Support
+                                    </button>
                                 </div>
 
                             </div>
@@ -457,10 +469,271 @@
                     </div>
                 </div>
             </div>
+        </footer>
+    </div>
+    <!-- stage 1 -->
+    <div class="modalkyc modalkyc__stage-one">
+        <div class="modalkyc__container">
+            <div class="modalkyc__row">
+                <div class="modalkyc__title">
+                    Know your customer (KYC)
+                </div>
+                <p class="modalkyc__text">In order to increase trust and fairness in the CONA Foundation platform, we need to uniquely identify you.</p>
+                <p class="modalkyc__text">Please prepare your passport or ID card.</p>
+                <button class="modalkyc__btn" id="modalkyc__btn_stageone">
+                <span>Start KYC</span>
+                <img src="img/stage/shield.svg" alt="shield">
+                </button>
+                <p class="modalkyc__text-info">Driver Licenses are not allowed and will be automatically rejected.
+                </p>
+                <p class="modalkyc__text-info">Citizens and residents of and persons located in the United States of America, China, Hong Kong, and all sanctioned OFAC countries (DR Congo, Iran, Myanmar, Sudan, Iraq, Ivory Coast, North Korea, Syria, Zimbabwe, Cuba, Belarus, Liberia)
+                    as well as Central African Republic, Libya, Mali, Somalia, Yemen are not allowed.
+                </p>
+                <button class="modalkyc__close">
+                    <img src="img/stage/close-modal-kyc.svg" alt="">
+                </button>
+            </div>
         </div>
     </div>
 
+    <!-- stage 2 -->
+    <div class="modalkyc modalkyc__stage-two">
+        <div class="modalkyc__container">
+            <div class="modalkyc__row">
+                <div class="modalkyc__title">
+                    Prepare for your verification
+                </div>
+                <form action="">
+                    <div class="modalkyc__form">
+                        <div class="modalkyc__form-col">
+                            <label for="card"><img src="img/stage/one.svg" alt=""></label>
+                            <input type="file" name="" id="card" class="modalkyc__form-input">
+                        </div>
+                        <div class="modalkyc__form-col">
+                            <label for="selfie"><img src="img/stage/two.svg" alt="" ></label>
+                            <input type="file" name="" id="selfie" class="modalkyc__form-input">
+                        </div>
+                    </div>
+                    <div class="modalkyc__helper">
+
+                        <div class="modalkyc__helper-col">
+                            <img src="img/stage/one.svg" alt="">
+                            <span class="modalkyc__helper-span">National ID card or Passport</span>
+                        </div>
+                        <div class="modalkyc__helper-col">
+                            <img src="img/stage/two.svg" alt="">
+                            <span class="modalkyc__helper-span">Position yourself in good light for selfie</span>
+                        </div>
+                        <input type="checkbox" class="modalkyc__helper-checkbox modalkyc__form-input" id="checboxForm">
+                        <label for="" class="modalkyc__helper-label">
+                            Agree to the Terms and conditions
+                        </label>
+                        <p class="modalkyc__helper-text">
+                            By clicking “Continue”, you agree to the Passbase Term of Use and acknowledge our Privacy Policy. You also acknowledge that you ar directing Passbase to share the information you provide with CONA Foundation. You personal information will also be subject
+                            to CONAs Privacy Policy and Passbase is not responsible for CONA Foundation’s
+                        </p>
+                    </div>
+
+
+                </form>
+
+                <button class="modalkyc__btn" id="modalkyc__btn_stagetwo">
+                <span>Send</span>
+                <img src="img/stage/shield.svg" alt="shield">
+                </button>
+
+
+                <button class="modalkyc__close">
+                    <img src="img/stage/close-modal-kyc.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- stage 3 -->
+    <div class="modalkyc modalkyc__stage-three">
+        <div class="modalkyc__container">
+            <div class="modalkyc__row modalkyc__row-stagethree">
+                <div class="modalkyc__title modalkyc__title-stagethree">
+                    Succeed
+                </div>
+                <p class="modalkyc__text">Your data has been successfully uploaded.</p>
+                <p class="modalkyc__text">Please prepare your passport or ID card.</p>
+                <p class="modalkyc__text">Your data will be processed within the next 48 hours. If your date is not processed within 48 hours, please, contact technical support!</p>
+                <p class="modalkyc__text">
+                    After confirming your identity, you will have to obtain accreditation status on the platform to participate in CONA Foundation’s IROs.
+                </p>
+
+                <button class="modalkyc__btn" id="modalkyc__btn_stagethree">
+                <span>Continue</span>
+                 
+                </button>
+
+                <button class="modalkyc__close">
+                    <img src="img/stage/close-modal-kyc.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- stage 3 error -->
+    <div class="modalkyc modalkyc__stage-error">
+        <div class="modalkyc__container">
+            <div class="modalkyc__row modalkyc__row-error ">
+                <div class="modalkyc__title modalkyc__title-error ">
+                    Error
+                </div>
+                <p class="modalkyc__text">Oops! Please try again...</p>
+                <button class="modalkyc__btn">
+                <span>Back</span>
+                </button>
+                <button class="modalkyc__close">
+                    <img src="img/stage/close-modal-kyc.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modals -->
+    <div class="modal" id="modal-partner">
+        <div class="partnerhsip">
+            <div class="partnerhsip__content">
+                <div class="partnerhsip__row">
+                    <div class="partnerhsip__logo">
+                        <img src="img/partnership/logo.svg" alt="">
+                    </div>
+                    <div class="partnerhsip__line">
+                        <img src="img/partnership/line.svg" alt="">
+                    </div>
+                    <div class="partnerhsip__title">
+                        Partnership
+                    </div>
+                </div>
+                <div class="partnerhsip__inner">
+                    <div class="partnerhsip__text">
+                        We are always glad to meet new people and fruitful cooperation.
+                        <br> Please fill in your contact details and tell us how we can be useful to each other.
+                    </div>
+                    <form action="" class="partnerhsip__form">
+                        <div class="partnerhsip__form-group">
+                            <input class="partnerhsip__input input-flex" type="text" placeholder="Your name or company">
+                        </div>
+
+                        <div class="partnerhsip__form-group">
+                            <input class="partnerhsip__input input-flex" type="email" placeholder="Your email"></div>
+                        <div class="partnerhsip__form-group">
+                            <input class="partnerhsip__input input-flex" type="tel" placeholder="Your phone">
+                        </div>
+                        <div class="partnerhsip__form-group input-basis">
+                            <input class="partnerhsip__input " type="text" placeholder="Subject">
+                        </div>
+                        <div class="partnerhsip__form-group input-shrink">
+                            <input class="partnerhsip__input input-shrink" type="text" placeholder="Your message">
+                        </div>
+
+
+
+
+                        <div class="partnerhsip__form-footer">
+                            <div class="form-footer__col">
+                                <input type="file" name="file" id="file" class="inputfile" />
+                                <label for="file">Upload</label>
+                            </div>
+                            <div class="form-footer__col">
+                                <button class="partnerhsip__form-btn">Send</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <button class="partnerhsip__close">
+                    <img src="img/form/close.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-support">
+        <div class="partnerhsip">
+            <div class="partnerhsip__content">
+                <div class="partnerhsip__row support__row">
+                    <div class="partnerhsip__logo">
+                        <img src="img/partnership/logo.svg" alt="">
+                    </div>
+                    <div class="partnerhsip__line">
+                        <img src="img/partnership/line.svg" alt="">
+                    </div>
+                    <div class="partnerhsip__title">
+                        Support
+                    </div>
+                </div>
+                <div class="partnerhsip__inner">
+                    <div class="partnerhsip__text">
+                        Tell us about your problem and we’ll get in touch shortly.
+                    </div>
+                    <form action="" class="partnerhsip__form">
+                        <div class="partnerhsip__form-group support__form-group">
+                            <input class="partnerhsip__input  support-width" type="text" placeholder="Your name">
+                        </div>
+
+                        <div class="partnerhsip__form-group support__form-group">
+                            <input class="partnerhsip__input   support-width" type="text" placeholder="Your wallet"></div>
+
+                        <div class="partnerhsip__form-group input-basis">
+                            <input class="partnerhsip__input " type="text" placeholder="Subject">
+                        </div>
+                        <div class="partnerhsip__form-group input-shrink">
+                            <input class="partnerhsip__input input-shrink" type="text" placeholder="Your message">
+                        </div>
+
+
+
+
+                        <div class="partnerhsip__form-footer">
+                            <div class="form-footer__col">
+                                <input type="file" name="file" id="file" class="inputfile" />
+                                <label for="file">Upload</label>
+                            </div>
+                            <div class="form-footer__col">
+                                <button class="partnerhsip__form-btn">Send</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <button class="support__close">
+                    <img src="img/form/close.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="wallet">
+        <div class="wallet__content">
+            <div class="wallet__row">
+                <div class="wallet__title">Wallet connection</div>
+                <div class="wallet__btn">
+                    <img class="wallet__btn-img" src="img/wallet/meta.png" alt="meta">
+                    <a class="wallet__link">Metamask</a>
+                </div>
+                <div class="wallet__btn">
+                    <img class="wallet__btn-img" src="img/wallet/trust.png" alt="trust">
+                    <a class="wallet__link">Trust Wallet</a>
+                </div>
+                <button class="wallet__close">
+                    <img src="img/wallet/close.svg" alt="close">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/stage_one.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/partnership.js"></script>
+    <script src="js/wallet.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>

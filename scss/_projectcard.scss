@@ -104,6 +104,7 @@
     position: relative;
     z-index: 1000;
     white-space: nowrap;
+    width: 100%;
     &:before {
         content: "";
         display: block;
@@ -158,9 +159,8 @@
     }
 }
 
-.progressbar__label-color {
+.projectcard__label-color {
     color: #000000;
-    font-weight: 500;
 }
 
 .projectcard__item-text {
@@ -177,4 +177,25 @@
     font-weight: 500;
     font-size: 14px;
     color: #606060;
+}
+
+.buttons-join-green {
+    color: #ffffff;
+    border: none;
+    background: #00bf84;
+}
+
+.buttons-join-black {
+    color: #ffffff;
+    border: none;
+    background: #000000;
+}
+
+.buttons-join-brown {
+    background: linear-gradient(83.11deg, #c3a692 0%, #e2c2a5 75%, #c3a692 100%);
+    color: #000000;
+}
+
+.your__participation {
+    display: none;
 }

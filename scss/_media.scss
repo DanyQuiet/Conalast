@@ -154,6 +154,7 @@
     }
     .header__nav.show {
         transform: translateX(0%);
+        overflow: hidden;
     }
     .logo {
         margin: 0;

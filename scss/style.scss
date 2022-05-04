@@ -26,6 +26,7 @@ a {
     text-decoration: none;
     font-family: inherit;
     color: inherit;
+    cursor: pointer;
 }
 
 input {
@@ -36,13 +37,23 @@ input {
 button {
     border: none;
     cursor: pointer;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
 }
 
 p {
     margin: 0;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -62,6 +73,14 @@ h1 {
 
 .iropage {
     flex: 1 0 auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.completekyc {
+    height: 100px;
 }
 
 @import "_header";
@@ -85,3 +104,23 @@ h1 {
 @import "_media-iro";
 @import "_media-projectcard";
 @import "_media-news";
+// detailed page
+@import "_detailed";
+@import "_detailednext";
+// dashboard page
+@import "_dashboard";
+@import "_dashboard-guest";
+@import "_media-dashboard";
+//policy
+@import "_policy";
+// terms
+@import "_terms";
+// stageone
+@import "_stageone";
+@import "_stagetwo";
+// stageone modal
+@import "modalkyc";
+// form
+@import "form/_partnership";
+@import "form/_support";
+@import "form/_wallet";

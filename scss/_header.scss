@@ -16,7 +16,7 @@
         justify-content: center;
         width: 100%;
     }
-    &__button {
+    &__button-link {
         padding: 10px 24px;
         position: relative;
         z-index: 1000;
@@ -24,9 +24,8 @@
         background: linear-gradient(70deg, #000 19%, #5a5a5a 71%, #000 92%);
         border-radius: 24px;
         letter-spacing: 0.4px;
-        &-link {
-            color: #e8e8e8;
-        }
+        color: #ffff;
+        font-weight: 400;
         &:before {
             content: "";
             display: block;
@@ -111,12 +110,14 @@
         width: 100%;
     }
     &__header-nav {
+        display: flex;
         margin-right: 32px;
         &_link {
             color: #000;
             letter-spacing: 0.4px;
+            font-weight: 500;
             &:hover {
-                text-decoration: underline;
+                color: #6d879c;
             }
         }
     }
@@ -162,4 +163,11 @@
     margin: 3px 0;
     background-color: #b29266;
     transition: transform 0.2s ease-out;
+}
+
+.header__marker-kyc {
+    color: #00bf84;
+    &:before {
+        background: #00bf84;
+    }
 }

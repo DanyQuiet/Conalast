@@ -1,0 +1,41 @@
+.terms {
+    &__row {}
+    &__col {}
+    &__content {}
+    &__content-header {}
+    &__content-subtitle {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 165%;
+    }
+    &__content-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 165%;
+    }
+    &__content-add {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 165%;
+        margin-bottom: 64px;
+    }
+    &__title {}
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 165%;
+    }
+}
+
+.term {
+    &__container {}
+}
+
+.container {}
+
+.policy {
+    &__info-add {}
+    &__version {}
+    &__data {}
+}

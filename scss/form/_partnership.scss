@@ -1,0 +1,209 @@
+.modal {
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+}
+
+.modal-show {
+    display: block;
+}
+
+.partnerhsip {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    align-items: center;
+    &__content {
+        max-width: 1024px;
+        width: 100%;
+        border-radius: 24px;
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient( 83.11deg, #000000 0%, #010101 0.01%, #444444 31.77%, #000000 100%, #000000 100%, #000000 100%);
+        padding: 35px 40px 20px 20px;
+        border-radius: 24px 24px 0 0;
+    }
+    &__logo {
+        margin-right: 32px;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__line {
+        margin-right: 32px;
+    }
+    &__title {
+        font-family: "RFDewiExpanded";
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    &__inner {
+        padding: 32px 40px;
+        background: #f9f9f9;
+        border-radius: 0 0 24px 24px;
+    }
+    &__text {
+        margin-bottom: 32px;
+    }
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .input-flex {
+            max-width: 295px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+        }
+        .input-basis,
+        .input-shrink {
+            flex-basis: 100%;
+            margin-right: 20px;
+            margin-bottom: 16px;
+        }
+        .input-shrink {
+            height: 150px;
+            margin-bottom: 32px;
+        }
+    }
+    &__form-group {
+        flex: 0 1 33.33333%;
+    }
+    &__input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 14px 16px;
+        border: 1px solid #ebebeb;
+        border-radius: 8px;
+        &::placeholder {
+            font-family: "Montserrat";
+            font-size: 16px;
+            font-weight: 400;
+            color: #606060;
+        }
+    }
+    &__form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-right: 20px;
+    }
+    &__form-btn {
+        background: linear-gradient( 83.11deg, #000000 0%, #010101 0.01%, #444444 31.77%, #000000 100%, #000000 100%, #000000 100%);
+        border-radius: 25px;
+        align-items: center;
+        padding: 15px 94px;
+        font-family: "RFDewiExpanded";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+    }
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    padding: 15px 61px 15px 29px;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #606060;
+    background-color: transparent;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.004em;
+    position: relative;
+    &:after {
+        content: url(../img/form/icon.svg);
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+}
+
+.inputfile+label {
+    cursor: pointer;
+}
+
+.support__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media (max-width: 1000px) {
+    .partnerhsip__form .input-basis,
+    .partnerhsip__form .input-shrink {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .partnerhsip__row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+    }
+    .partnerhsip__logo {
+        margin-right: 0;
+    }
+    .partnerhsip__line {
+        img {
+            transform: rotate(90deg);
+            margin-right: 0;
+            margin-left: 32px;
+        }
+    }
+    .partnerhsip__form-group {
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .partnerhsip__logo {
+        opacity: 0.3;
+    }
+    .partnerhsip__inner {
+        padding: 32px 15px;
+    }
+    .partnerhsip__form-footer {
+        flex-direction: column;
+        margin-right: 0px;
+    }
+    .form-footer__col:first-child {
+        margin-bottom: 20px;
+    }
+}

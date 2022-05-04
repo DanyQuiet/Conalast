@@ -1,0 +1,79 @@
+.policy {
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 128px;
+    }
+    &__col {
+        max-width: 1055px;
+        width: 100%;
+        margin-bottom: 96px;
+        &:last-child {
+            margin-bottom: 190px;
+        }
+    }
+    &__header {
+        font-family: "RFDewiExpanded";
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 130%;
+        margin-bottom: 65px;
+    }
+    &__subtitle {
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 165%;
+    }
+    &__title-text {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 165%;
+        margin-bottom: 64px;
+    }
+    &__title-add {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 165%;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 165%;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 165%;
+    }
+    &__info-add {
+        padding-top: 64px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 155%;
+        color: #a5a5a5;
+    }
+    &__link {
+        color: #6d879c;
+    }
+}
+
+@media (max-width: 1200px) {
+    .policy__header {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 770px) {
+    .policy__header {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .policy__header {
+        padding-top: 170px;
+    }
+}

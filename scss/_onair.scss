@@ -42,7 +42,7 @@
             height: 100%;
             top: 0;
             left: 0;
-            border-radius: 16px 16px;
+            border-radius: 16px 16px 0 0;
         }
     }
     &__content {
@@ -84,20 +84,43 @@
     }
 }
 
-.progressbar {
+.progressbar__block {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    &__label {
+    &-label {
         font-family: "Montserrat";
         font-weight: 500;
         font-size: 12px;
         line-height: 150%;
         letter-spacing: 0.4px;
         color: #a5a5a5;
+        margin-bottom: 4px;
     }
-    &__line {
-        width: 100%;
+}
+
+.progressbar {
+    background-color: #e5e5e5;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.progressbar {
+    &__value {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: #00bf84;
+        width: 0%;
         height: 18px;
+        border-radius: 4px;
+        span {
+            white-space: nowrap;
+            font-size: 12px;
+            color: #ffff;
+            font-weight: 600;
+            padding: 0 2px;
+            display: none;
+        }
     }
 }

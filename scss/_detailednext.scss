@@ -1,0 +1,13 @@
+.detailednext__margin:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.detailednext__img {
+    margin-bottom: 95px;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
